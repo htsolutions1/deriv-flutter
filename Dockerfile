@@ -50,5 +50,11 @@ EXPOSE 8080
 # Install a simple static file server
 RUN apt-get update && apt-get install -y python3 && rm -rf /var/lib/apt/lists/*
 
+# Set working directory to built web app
+WORKDIR /app/build/web
+
+# Copy a simple Python server script for Flutter web
+RUN echo 'import http.server\nimport socketserver\nimport os\n\nPORT = int(os.environ.get("PORT", 8080))\n\nclass MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):\n    def end_headers(self):\n        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")\n        self.send_header("Pragma", "no-cache")\n        self.send_header("Expires", "0")\n        super().end_headers()\n    \n    def do_GET(self):\n        # Serve index.html for all routes (Flutter handles routing)\n        if not os.path.exists(self.translate_path(self.path)):\n            self.path = "/index.html"\n        return super().do_GET()\n\nwith socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:\n    print(f"Server running at http://0.0.0.0:{PORT}")\n    httpd.serve_forever()' > server.py
+
 # Serve the built web app
-CMD python3 -m http.server 8080 --directory build/web
+CMD ["python3", "server.py"]
