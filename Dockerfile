@@ -20,8 +20,14 @@ RUN curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra_release/
 # Add Flutter to PATH
 ENV PATH="/opt/flutter/bin:${PATH}"
 
-# Pre-download Flutter dependencies
-RUN flutter doctor -v
+# Fix git ownership issues
+RUN git config --global --add safe.directory /opt/flutter \
+    && git config --global --add safe.directory '*'
+
+# Pre-download Flutter dependencies and accept licenses
+RUN flutter doctor -v \
+    && flutter precache --web \
+    && yes | flutter doctor --android-licenses || true
 
 # Set working directory
 WORKDIR /app
