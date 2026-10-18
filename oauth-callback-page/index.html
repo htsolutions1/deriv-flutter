@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTS Bot - Completing Login...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #D4AF37;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #D4AF37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .error {
+            background: #fee;
+            border: 1px solid #fcc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            color: #c33;
+        }
+        
+        .success {
+            background: #efe;
+            border: 1px solid #cfc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            color: #363;
+        }
+        
+        button {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .code {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">HT</div>
+        <h1 id="title">Completing Login...</h1>
+        <div class="spinner" id="spinner"></div>
+        <p id="message">Please wait while we complete your authentication.</p>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const state = urlParams.get('state');
+        const error = urlParams.get('error');
+        const errorDescription = urlParams.get('error_description');
+
+        const spinner = document.getElementById('spinner');
+        const title = document.getElementById('title');
+        const message = document.getElementById('message');
+        const result = document.getElementById('result');
+
+        // Supabase configuration
+        const SUPABASE_URL = 'https://llyjlhzyajoghrouysos.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxseWpsaHp5YWpvZ2hyb3V5c29zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ1NTM1NTEsImV4cCI6MjEwMDEyOTU1MX0.iAPywJQDF6wKxzgfxOVAMM1glj8U8bSrnsrQsqNxDGI';
+
+        async function handleCallback() {
+            // Check for errors from Deriv
+            if (error) {
+                spinner.style.display = 'none';
+                title.textContent = 'Authentication Failed';
+                message.textContent = errorDescription || error;
+                result.innerHTML = `<div class="error">Error: ${error}<br>${errorDescription || ''}</div>`;
+                return;
+            }
+
+            // Validate we have code and state
+            if (!code || !state) {
+                spinner.style.display = 'none';
+                title.textContent = 'Invalid Callback';
+                message.textContent = 'Missing required parameters.';
+                result.innerHTML = '<div class="error">Missing authorization code or state parameter.</div>';
+                return;
+            }
+
+            try {
+                // Call Supabase Edge Function to handle OAuth
+                const response = await fetch(`${SUPABASE_URL}/functions/v1/oauth-callback`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'apikey': SUPABASE_ANON_KEY,
+                    },
+                    body: JSON.stringify({ code, state })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Failed to complete authentication');
+                }
+
+                // Success!
+                spinner.style.display = 'none';
+                title.textContent = 'Login Successful!';
+                message.textContent = 'You can close this window and return to the app.';
+                result.innerHTML = `
+                    <div class="success">✓ Authentication completed successfully</div>
+                    <div class="code">
+                        <strong>Authorization Code:</strong><br>
+                        ${code.substring(0, 20)}...
+                    </div>
+                    <button onclick="window.close()">Close Window</button>
+                `;
+
+                // Try to post message to opener (if opened in popup)
+                if (window.opener) {
+                    window.opener.postMessage({
+                        type: 'oauth_callback',
+                        code: code,
+                        state: state,
+                        access_token: data.access_token,
+                        user: data.user
+                    }, '*');
+                    
+                    // Auto-close after message sent
+                    setTimeout(() => {
+                        window.close();
+                    }, 2000);
+                }
+
+            } catch (err) {
+                spinner.style.display = 'none';
+                title.textContent = 'Authentication Error';
+                message.textContent = 'Failed to complete login process.';
+                result.innerHTML = `<div class="error">${err.message}</div>`;
+            }
+        }
+
+        // Run callback handler
+        handleCallback();
+    </script>
+</body>
+</html>

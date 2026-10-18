@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["flutter"]
+
+[phases.build]
+cmds = ["flutter build web --release"]
+
+[start]
+cmd = "echo 'Static site ready'"

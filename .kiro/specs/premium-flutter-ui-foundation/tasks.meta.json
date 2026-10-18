@@ -1,0 +1,586 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `pubspec.yaml` with all pinned dependencies": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950743118
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950815505
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951012228
+      }
+    ],
+    "1.2 Create `lib/main.dart` with app entry point": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950744519
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951025586
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951160942
+      }
+    ],
+    "1.3 Create `lib/core/constants/` barrel and folder structure": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950744754
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950816328
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951012881
+      }
+    ],
+    "2.1 Create `lib/core/constants/app_colors.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950744962
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951026265
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951162688
+      }
+    ],
+    "2.2 Create `lib/theme/text_styles.dart` and `lib/theme/app_theme.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950745430
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951169220
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951243559
+      }
+    ],
+    "2.3 Create `lib/core/constants/app_sizes.dart` and `lib/core/constants/app_strings.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950745769
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951027200
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951162920
+      }
+    ],
+    "3.1 Create `lib/core/enums/app_enums.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950745955
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951170190
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951242757
+      }
+    ],
+    "3.2 Create domain model files": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950746140
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951249710
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951443942
+      }
+    ],
+    "3.3 Create provider state models": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950746393
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951250655
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951444793
+      }
+    ],
+    "4.1 Create core providers": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950746574
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951500936
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951655025
+      }
+    ],
+    "4.2 Create feature providers": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950746762
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951501325
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951655572
+      }
+    ],
+    "5.1 Create `lib/routing/app_router.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950746964
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951501752
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951656279
+      }
+    ],
+    "6.1 Create `lib/core/utils/pkce_generator.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950747171
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951707190
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951818722
+      }
+    ],
+    "6.2 Create `lib/core/utils/oauth_url_builder.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950747394
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951707961
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951817959
+      }
+    ],
+    "7.1 Create `lib/shared/cards/glass_card.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950747714
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951825683
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951881657
+      }
+    ],
+    "7.3 Create card variant widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950747924
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951907173
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952485429
+      }
+    ],
+    "7.4 Create utility widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950748111
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951907845
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952485859
+      }
+    ],
+    "8.1 Create button widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950748317
+      },
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951908521
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952486530
+      }
+    ],
+    "9.1 Create navigation widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950748503
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952493998
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954346981
+      }
+    ],
+    "9.3 Create tile widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950748667
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952494458
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954347652
+      }
+    ],
+    "9.5 Create dialog and bottom sheet widgets": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950748860
+      },
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952495313
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954348086
+      }
+    ],
+    "10.1 Implement `lib/features/login/login_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749031
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954395854
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958622185
+      }
+    ],
+    "10.3 Implement `lib/features/dashboard/dashboard_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749214
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954396611
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958711049
+      }
+    ],
+    "10.4 Implement `lib/features/trades/active_trades_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749435
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954397536
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958348292
+      }
+    ],
+    "10.6 Implement `lib/features/signals/signal_monitor_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749618
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958389991
+      }
+    ],
+    "10.7 Implement `lib/features/settings/settings_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749802
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958396441
+      }
+    ],
+    "10.8 Implement `lib/features/account/account_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950749996
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958397718
+      }
+    ],
+    "10.9 Implement `lib/features/history/trade_history_screen.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950750178
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958398051
+      }
+    ],
+    "11.1 Create `lib/shared/animations/staggered_entrance.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950750396
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954393999
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958347111
+      }
+    ],
+    "11.2 Create `lib/shared/animations/press_animation.dart`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950750579
+      },
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954394825
+      },
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958347503
+      }
+    ],
+    "12.1 Wire all screens into `AppRouter`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950750726
+      }
+    ],
+    "12.2 Wire `LoadingOverlay` into `AuthenticatedShell`": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950750891
+      }
+    ],
+    "12.3 Final checkpoint — Ensure all tests pass, ask the user if questions arise.": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784950751035
+      }
+    ],
+    "1. Flutter project scaffold and pubspec": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951161131
+      }
+    ],
+    "2. Theme system and color constants": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951243875
+      }
+    ],
+    "3. Core enums, models, and domain types": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951445030
+      }
+    ],
+    "4. Riverpod providers": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951655697
+      }
+    ],
+    "5. Routing": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951656488
+      }
+    ],
+    "6. PKCE utilities": [
+      {
+        "executionId": "d9f6338f-b11f-4490-916d-13adaeffbe99",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784951818882
+      }
+    ],
+    "7. Shared widget library — cards and utility widgets": [
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952486182
+      }
+    ],
+    "8. Shared widget library — buttons": [
+      {
+        "executionId": "375cebe0-7e51-4017-b738-fa83d00486d0",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784952486749
+      }
+    ],
+    "9. Shared widget library — navigation, tiles, and dialogs": [
+      {
+        "executionId": "27a9ddf6-329d-4d53-abe8-5538aff9b526",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784954348264
+      }
+    ],
+    "11. Animation framework helpers": [
+      {
+        "executionId": "a436b628-95ee-42ef-82e5-df97df782404",
+        "chatSessionId": "sess_1fff6eb5-4811-4fdb-bf5d-58bb755214ca",
+        "timestamp": 1784958347679
+      }
+    ]
+  }
+}

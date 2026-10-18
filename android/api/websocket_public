@@ -1,0 +1,67 @@
+
+
+[Options Setup](/docs/options)
+
+# WebSocket Public Endpoint
+
+Get No auth
+
+Streams real-time public market data — quotes, ticks, and contract metadata — with no authentication or OTP required. Account-scoped actions such as placing trades or reading balances aren't available on this channel.
+
+## Endpoint
+
+Get `/trading/v1/options/ws/public`
+
+Base URL: `https://api.derivws.com`
+
+## Examples
+
+### Request Example
+
+```json
+GET /trading/v1/options/ws/public
+
+No authentication required. Connect directly to receive public market data.
+```
+
+### Response Example
+
+```json
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+
+WebSocket connection established successfully.
+You can now receive public market data through this connection.
+```
+
+## Status Codes
+
+101 Switching Protocols - WebSocket connection established
+
+400 Bad request
+
+## Error Responses
+
+400 Bad request
+
+```
+{
+  "errors": [
+    {
+      "status": 400,
+      "code": "ValidationError",
+      "message": "Invalid request"
+    }
+  ],
+  "meta": {
+    "endpoint": "/trading/v1/options/ws/public",
+    "method": "GET",
+    "timing": 10
+  }
+}
+```
+
+## About ws_public
+
+The `ws_public` endpoint: Streams real-time public market data — quotes, ticks, and contract metadata — with no authentication or OTP required. Account-scoped actions such as placing trades or reading balances aren't available on this channel.

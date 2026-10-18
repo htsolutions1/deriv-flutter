@@ -1,0 +1,146 @@
+[Trading Operations](/docs/trading)
+
+# Update Contract
+
+Auth required
+
+Update settings for an open contract.
+
+## Request & Response
+
+## Request Schema
+
+#### `contract_update` — Required `integer | enum`
+
+Must be `1`
+
+Allowed values: `1`
+
+#### `contract_id` — Required `integer`
+
+Internal unique contract identifier.
+
+#### `limit_order` — Required `object`
+
+Specify limit order to update.
+
+**Object Properties:**
+
+  ##### `stop_loss` — Optional `null | number`
+
+  New stop loss value for a contract. To cancel, pass `null`.
+
+  ##### `take_profit` — Optional `null | number`
+
+  New take profit value for a contract. To cancel, pass `null`.
+
+#### `passthrough` — Optional `object`
+
+[Optional] Used to pass data through the websocket, which may be retrieved via the `echo_req` output field.
+
+#### `req_id` — Optional `integer`
+
+[Optional] Used to map request to response.
+
+## Response Schema
+
+#### `contract_update` — Optional `object`
+
+Contains the update status of the request
+
+**Object Properties:**
+
+  ##### `stop_loss` — Optional `object`
+
+  The target spot price where the contract will be closed automatically at the loss specified by the user.
+
+  **Object Properties:**
+
+    ###### `display_name` — Optional `string`
+
+    Localized display name
+
+    ###### `order_amount` — Optional `null | number`
+
+    Stop loss amount
+
+    ###### `order_date` — Optional `integer`
+
+    Stop loss order epoch
+
+    ###### `value` — Optional `null | string`
+
+    Stop loss pip-sized barrier value
+
+  ##### `take_profit` — Optional `object`
+
+  The target spot price where the contract will be closed automatically at the profit specified by the user.
+
+  **Object Properties:**
+
+    ###### `display_name` — Optional `string`
+
+    Localized display name
+
+    ###### `order_amount` — Optional `null | number`
+
+    Take profit amount
+
+    ###### `order_date` — Optional `integer`
+
+    Take profit order epoch
+
+    ###### `value` — Optional `null | string`
+
+    Take profit pip-sized barrier value
+
+#### `echo_req` — Required `object`
+
+Echo of the request made.
+
+#### `msg_type` — Required `string | enum`
+
+Action name of the request made.
+
+Allowed values: `"contract_update"`
+
+#### `req_id` — Optional `integer`
+
+Optional field sent in request to map to response, present only when request contains `req_id`.
+
+## Examples
+
+### Request Example
+
+```json
+{
+  "contract_update": 1,
+  "contract_id": 123,
+  "limit_order": {
+    "take_profit": 1
+  }
+}
+```
+
+### Response Example
+
+```json
+{
+  "contract_update": {
+    "take_profit": {
+      "order_amount": 1
+    }
+  },
+  "msg_type": "contract_update"
+}
+```
+
+##### Authentication Required
+
+This endpoint requires a valid session. Ensure your WebSocket connection is authenticated before calling this endpoint.
+
+## About contract_update
+
+The `contract_update` endpoint: Update settings for an open contract.
+
+This is a trading endpoint. Use it to get proposals, buy/sell contracts, and manage active positions. Most trading endpoints require authentication.

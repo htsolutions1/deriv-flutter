@@ -1,0 +1,37 @@
+[Endpoints](/docs)
+
+# Trading Operations RESTWebSocket
+
+Buy, sell, and manage contracts
+
+[Price Proposal WebSocket No auth
+
+Get a price proposal for a specific contract. `proposal`](/docs/trading/proposal/)
+
+[Buy Contract WebSocket Auth required
+
+Buy a contract using a proposal ID, or pass contract parameters directly. `buy`](/docs/trading/buy/)
+
+[Sell Contract WebSocket Auth required
+
+Sell an open contract before expiry. `sell`](/docs/trading/sell/)
+
+[Open Contract Status WebSocket Auth required
+
+Get the latest status of an open contract. `proposal_open_contract`](/docs/trading/proposal-open-contract/)
+
+[Update Contract WebSocket Auth required
+
+Update settings for an open contract. `contract_update`](/docs/trading/contract-update/)
+
+[Contract Update History WebSocket Auth required
+
+Get history of updates for a contract. `contract_update_history`](/docs/trading/contract-update-history/)
+
+[Cancel Contract WebSocket Auth required
+
+Cancel a contract. `cancel`](/docs/trading/cancel/)
+
+[Bulk Purchase REST Auth required
+
+Buy the same options contract for multiple end-user accounts in a single call. This is the V2 successor to the legacy buy_contract_for_multiple_accounts flow used by copy-trading platforms. Authentication is per-account: each entry in accounts pairs an end-user personal access token carrying the trade scope with the account it owns, so no separate OAuth token is needed for the call itself. You send one set of contract parameters with a list of accounts to buy for, and the same parameters apply to every account. Up to 100 accounts are accepted per request. Each account_type path accepts only its own account type — a demo account submitted to the real path (or vice versa) is reported as a per-account failure, not a request-level error. Any entry that fails token, ownership, or account-type validation is reported on its own, without affecting the others, but the request is rejected if none of the entries pass validation. `/trading/v1/options/contracts/bulk-purchase/{account_type}`](/docs/trading/bulk-purchase/)
