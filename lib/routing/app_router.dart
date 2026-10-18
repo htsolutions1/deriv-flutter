@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 
-import 'package:ht_bot/features/auth/login_screen.dart';
+import 'package:ht_bot/features/auth/login_screen_new.dart';
 import 'package:ht_bot/features/auth/oauth_callback_screen.dart';
 import 'package:ht_bot/features/dashboard/dashboard_screen.dart';
 import 'package:ht_bot/features/trades/active_trades_screen.dart';
@@ -31,7 +31,7 @@ abstract final class AppRouter {
     routes: [
       GoRoute(
         path: AppRoutes.login,
-        builder: (context, state) => const LoginScreen(),
+        builder: (context, state) => const LoginScreenNew(),
       ),
       GoRoute(
         path: AppRoutes.oauthDebug,
