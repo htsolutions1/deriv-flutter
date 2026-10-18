@@ -42,42 +42,9 @@ class HtBotApp extends ConsumerWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, __) {
-        // On web: wrap in a responsive container with max width
+        // On web: make it full screen without any wrapper
         if (kIsWeb) {
-          return MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: AppTheme.lightTheme(),
-            home: Scaffold(
-              backgroundColor: const Color(0xFFE5E5E5),
-              body: Center(
-                child: LayoutBuilder(
-                  builder: (context, constraints) {
-                    // Use full width on mobile, max 430px on desktop
-                    final containerWidth = constraints.maxWidth > 600 
-                        ? 430.0 
-                        : constraints.maxWidth;
-                    
-                    return Container(
-                      width: containerWidth,
-                      height: constraints.maxHeight,
-                      decoration: BoxDecoration(
-                        color: AppColors.background,
-                        boxShadow: constraints.maxWidth > 600 ? [
-                          BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.1),
-                            blurRadius: 20,
-                            spreadRadius: 0,
-                            offset: const Offset(0, 4),
-                          ),
-                        ] : null,
-                      ),
-                      child: ClipRect(child: app),
-                    );
-                  },
-                ),
-              ),
-            ),
-          );
+          return app;
         }
 
         return app;
