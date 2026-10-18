@@ -33,7 +33,7 @@ class HtBotApp extends ConsumerWidget {
     return ScreenUtilInit(
       designSize: const Size(390, 844),
       minTextAdapt: true,
-      splitScreenMode: false,
+      splitScreenMode: true,
       builder: (_, __) {
         final app = MaterialApp.router(
           title: 'HT BOT',
@@ -42,30 +42,32 @@ class HtBotApp extends ConsumerWidget {
           routerConfig: AppRouter.router,
         );
 
-        // On web: wrap in a centered mobile-width container
+        // On web: wrap in a responsive container with max width
         if (kIsWeb) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             home: Scaffold(
               backgroundColor: const Color(0xFFD0D8E0),
               body: Center(
-                child: Container(
-                  width: 390,
+                child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 430),
-                  decoration: BoxDecoration(
-                    color: AppColors.background,
-                    borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.25),
-                        blurRadius: 40,
-                        spreadRadius: 0,
-                        offset: const Offset(0, 8),
-                      ),
-                    ],
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: AppColors.background,
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.25),
+                          blurRadius: 40,
+                          spreadRadius: 0,
+                          offset: const Offset(0, 8),
+                        ),
+                      ],
+                    ),
+                    clipBehavior: Clip.antiAlias,
+                    child: app,
                   ),
-                  clipBehavior: Clip.antiAlias,
-                  child: app,
                 ),
               ),
             ),
