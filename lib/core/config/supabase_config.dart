@@ -13,8 +13,8 @@ class SupabaseConfig {
   
   // Platform-specific redirect URIs
   // IMPORTANT: Must match what's registered in Deriv app settings
-  // Using Railway for deployment: https://htsbot.up.railway.app
-  static const String _webRedirectUri = 'https://htsbot.up.railway.app/callback';
+  // Using Railway for deployment
+  static const String _webRedirectUri = 'https://deriv-flutter-production.up.railway.app/callback';
   static const String _mobileRedirectUri = 'htbot://callback';
   
   /// Get redirect URI based on current platform
