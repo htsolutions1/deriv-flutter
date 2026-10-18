@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
     libglu1-mesa \
     && rm -rf /var/lib/apt/lists/*
 
-# Download and install Flutter
-RUN curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.19.6-stable.tar.xz \
+# Download and install Flutter (latest stable with Dart 3.4.0+)
+RUN curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.3-stable.tar.xz \
     && tar xf flutter.tar.xz \
     && mv flutter /opt/flutter \
     && rm flutter.tar.xz
