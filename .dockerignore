@@ -1,0 +1,32 @@
+# Dart/Flutter build artifacts
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# Android/iOS (not needed for web)
+android/
+ios/
+macos/
+windows/
+linux/
+
+# Documentation and misc
+*.md
+*.sql
+*.png
+.kiro/
+.metadata
+test/
+oauth-callback-page/
